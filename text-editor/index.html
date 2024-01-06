@@ -18,8 +18,8 @@
                 <div class="flex justify-between border-4 border-b-gray-500 p-4">
                     <div class="flex gap-2">
                        <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-bold mx-1" id="bold-id"></i></span> 
-                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-italic"></i></span> 
-                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-underline "></i></span>
+                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-italic" id="italic-id"></i></span> 
+                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-underline" id="underline-id"></i></span>
                         
                     </div>
                     <div class="flex gap-2">
@@ -47,25 +47,21 @@
         </div>
     
     </div>
+
+    <script src="js/script.js"></script>
     
 
     <script>
-        document.getElementById('bold-id').addEventListener('click', function(){
-    
-            let inputStr = document.getElementById('input-text').value ;
-            console.log(inputStr);
-            document.getElementById('input-text').innerHTML = inputStr.italics();
 
-            
-            
-           // print(updateField);
+        // just creating a function for getting the input value
+       
+        var hr = 1;
+        function getInputString(){
+            inputString = document.getElementById('input-text');
+            return inputString; 
+        }
 
-            // let inputText = inputField.value;
-            // inputText = inputText.bold();
-            // console.log(inputText);
-            // inputField.value = inputText;
-            
-        })
+
     </script>
     
 </body>
