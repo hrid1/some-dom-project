@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/922dab29cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="justify-center h-screen bg-red-300 flex items-center">
+        
+        <div class="w-4/5 h-4/5 bg-blue-300 flex flex-col justify-center items-center gap-4 ">
+            <h1 class="font-bold text-2xl">My Text Editor</h1>
+            <div class="w-5/6 h-4/5 bg-blue-100 border-2 border-gray-900">
+
+                <div class="flex justify-between border-4 border-b-gray-500 p-4">
+                    <div class="flex gap-2">
+                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-bold mx-1" id="bold-id"></i></span> 
+                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-italic"></i></span> 
+                       <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-underline "></i></span>
+                        
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-align-left"></i></span>
+                        <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-align-center"></i></span>
+                        <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-align-right"></i></span>
+                        <span class="hover:bg-blue-400 rounded"><i class="fa-solid fa-align-justify"></i></span>
+                       
+                    </div>
+                    <div class="flex gap-2">
+                        <input type="number" class="w-10 bg-gray-300">
+                        <h1>color</h1>
+                        
+                    </div>
+                </div>
+
+                <div class="w-11/12 h-3/4  mx-auto mt-5">
+                    <textarea name="" id="input-text" 
+                    class="w-full p-2" cols="100" rows="12"></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+    
+
+    <script>
+        document.getElementById('bold-id').addEventListener('click', function(){
+    
+            let inputStr = document.getElementById('input-text').value ;
+            console.log(inputStr);
+            document.getElementById('input-text').innerHTML = inputStr.italics();
+
+            
+            
+           // print(updateField);
+
+            // let inputText = inputField.value;
+            // inputText = inputText.bold();
+            // console.log(inputText);
+            // inputField.value = inputText;
+            
+        })
+    </script>
+    
+</body>
+</html>
