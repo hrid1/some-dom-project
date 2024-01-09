@@ -43,3 +43,13 @@ document.getElementById('underline-id').addEventListener('click', function(){
     }
     
 })
+
+
+// font-size
+
+document.getElementById('font-size-id').addEventListener('keyup',function(){
+    let inputStr = getInputString();
+    let inputSize = document.getElementById('font-size-id').value + "px";
+    inputStr.style.fontSize = "inputSize";
+    console.log(inputSize);
+})
