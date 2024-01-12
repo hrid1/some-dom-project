@@ -56,11 +56,19 @@ document.getElementById("calculator").addEventListener("click", function(event){
 document.getElementById("submit-btn").addEventListener("click", function(){
     const originalPin = document.getElementById("random-number");
     const userinput = document.getElementById("input-number");
+
+    const matchTrue = document.getElementById("match-true");
+    const matchFalse = document.getElementById("match-false");
+
+
     if (originalPin.value == userinput.value){
-        console.log("Got it");
+        matchTrue.style.display = "block";
+        matchFalse.style.display = "none";
     }
     else{
         console.log("soryy!");
+        matchFalse.style.display = "block";
+        matchTrue.style.display = "none";
     }
 })
 
