@@ -31,28 +31,28 @@
                 <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="">Rectangle</h2>
-                      <p>Area(A) = w * l</p>
+                      <h2 id="triangle" class="font-bold text-xl">Triangle</h2>
+                      <p>Area(A) =0.5 * b * h</p>
                       <div>
-                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="w"> <span>cm</span>
-                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="l"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="b" id="tria-w"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="h" id="tria-l"> <span>cm</span>
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="tria-btn">Calculate </button>
                       </div>
                     </div>
                   </div>
                 <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/rectangle.png" alt="Shoes" class=""/></figure>
                     <div class="card-body">
-                      <h2 class="">Rectangle</h2>
+                      <h2 id="rectangle" class="font-bold text-xl">Rectangle</h2>
                       <p>Area(A) = w * l</p>
                       <div>
-                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="w"> <span>cm</span>
-                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="l"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="w" id="rect-w"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="l" id="rect-l"> <span>cm</span>
                       </div>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="rect-btn">Calculate </button>
                       </div>
                     </div>
                   </div>
@@ -60,11 +60,11 @@
                 <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="font-bold text-xl">Paraleelogram</h2>
+                      <h2 id="parallelogram" class="font-bold text-xl">Paraleelogram</h2>
                       <p class="h-1"> Area(A) = b * h</p>
-                      <h1>b =10cm, h=12cm</h1>
+                      <h1>b=<span id="para-h">10</span>cm, h=<span id="para-b">12</span>cm</h1>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="para-btn">Calculate </button>
                       </div>
                     </div>
                   </div>    
@@ -72,11 +72,11 @@
                   <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="font-bold text-xl">Rectangle</h2>
+                      <h2 class="font-bold text-xl" id="rhombus">Rhombus</h2>
                       <p>Area(A) = 0.5 * d1 * d2</p>
-                      <h1>d1= 16cm, d2 = 8cm</h1>
+                      <h1>d1= <span id="rhom-d1">16</span>cm, d2 = <span id="rhom-d2">8</span>cm</h1>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="rhom-btn">Calculate </button>
                       </div>
                     </div>
                   </div>
@@ -84,11 +84,11 @@
                   <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="font-bold text-xl">Pentagon</h2>
+                      <h2 class="font-bold text-xl" id="pentagon">Pentagon</h2>
                       <p>Area(A) = 0.5 X p X b</p>
-                      <h1> p = 10cm, b = 10cm</h1>
+                      <h1> p = <span id="penta-p">6</span>cm, b = <span id="penta-b">8</span>cm</h1>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="penta-btn">Calculate </button>
                       </div>
                     </div>
                   </div>
@@ -96,11 +96,11 @@
                   <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
                     <figure class="p-5"><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="font-bold text-xl">Ellipse</h2>
+                      <h2 class="font-bold text-xl" id="ellipse">Ellipse</h2>
                       <p>Area(A) = Aab</p>
-                      <h1>a = 10cm, b = 4cm</h1>
+                      <h1>a = <span id="elip-a">10</span>cm, b = <span id="elip-b">4</span>cm</h1>
                       <div class="card-actions justify-center">
-                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5" id="elip-btn">Calculate </button>
                       </div>
                     </div>
                   </div>
@@ -115,18 +115,15 @@
             <table class="table">
               <!-- head -->
              
-              <tbody>
+              <tbody id="tbody">
                 <!-- row 1 -->
-                <tr>     
+                <!-- <tr>     
                   <td>1.The </td>
-                <td>12cm2</td>
-                <td><button class="bg-blue-500 text-white px-1 py-1 rounded font-semibold ">Convert to m2</button></td>
-                </tr>
-                <tr>     
-                  <td>1.The </td>
-                <td>12cm2</td>
-                <td><button class="bg-blue-500 text-white px-1 py-1 rounded font-semibold ">Convert to m2</button></td>
-                </tr>
+                  <td>12cm2</td>
+                  <td><button class="bg-blue-500 text-white px-1 py-1 rounded font-semibold ">Convert to m2</button></td>
+                </tr> -->
+               
+              </tbody>
 
           </div>
         </section>
@@ -138,6 +135,32 @@
       
     </footer>
     
-
+    <script src="./index.js"></script>
 </body>
 </html>
+
+
+<!-- 
+
+
+//-----------------for Ellipse
+
+document.getElementById("elip-btn").addEventListener("click", function(){
+
+    let info = getNameValue(inputType=false,"ellipse", "elip-a", "elip-b");
+    itemName = info.name;
+    itemValA = info.val1;
+    itemValB = info.val2;
+    const pi = Math.PI;
+
+    const area = pi * itemValA * itemValB ;
+    
+    count+=1;
+    
+    displayAns(count, itemName, area);
+    
+})
+
+
+
+ -->
