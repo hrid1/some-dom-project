@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header>
+        <div class=" bg-blue-100 flex place-content-between px-12 py- items-center">
+    
+            <div class=" font-semibold">
+                <h1 class="text-3xl font-bold">Interactive</h1>
+                <h1 class="text-2xl">Geometry Genius</h1>   
+            </div>
+              
+            
+            <div>
+                <a class="btn rounded bg-blue-500 text-white  px-6">Blog</a>
+            </div>
+            </div>
+    </header>
+    <main class="flex flex-col md:flex-row lg:flex-row mt-5 ">
+        <section class="w-full md:w-3/4 grid md:grid-cols-2 lg:grid-cols-3  gap-3 mx-5">
+
+            
+                
+                <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="">Rectangle</h2>
+                      <p>Area(A) = w * l</p>
+                      <div>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="w"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="l"> <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/rectangle.png" alt="Shoes" class=""/></figure>
+                    <div class="card-body">
+                      <h2 class="">Rectangle</h2>
+                      <p>Area(A) = w * l</p>
+                      <div>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="w"> <span>cm</span>
+                        <input type="text" class="w-1/5 px-3 rounded mx-2" placeholder="l"> <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-xl">Paraleelogram</h2>
+                      <p class="h-1"> Area(A) = b * h</p>
+                      <h1>b =10cm, h=12cm</h1>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>    
+                
+                  <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-xl">Rectangle</h2>
+                      <p>Area(A) = 0.5 * d1 * d2</p>
+                      <h1>d1= 16cm, d2 = 8cm</h1>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+               
+                  <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-xl">Pentagon</h2>
+                      <p>Area(A) = 0.5 X p X b</p>
+                      <h1> p = 10cm, b = 10cm</h1>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+               
+                  <div class="card w-11/12 bg-base-100 shadow-xl text-center bg-blue-100">
+                    <figure class="p-5"><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="font-bold text-xl">Ellipse</h2>
+                      <p>Area(A) = Aab</p>
+                      <h1>a = 10cm, b = 4cm</h1>
+                      <div class="card-actions justify-center">
+                        <button class="btn rounded bg-blue-500  text-white w-11/12 mt-5">Calculate </button>
+                      </div>
+                    </div>
+                  </div>
+
+        </section>
+
+        <section class="w-full md:w-1/4 h-80 px-5">
+         <h1 class="text-3xl font-semibold underline text-center">Area Calculation</h1>
+
+
+          <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+             
+              <tbody>
+                <!-- row 1 -->
+                <tr>     
+                  <td>1.The </td>
+                <td>12cm2</td>
+                <td><button class="bg-blue-500 text-white px-1 py-1 rounded font-semibold ">Convert to m2</button></td>
+                </tr>
+                <tr>     
+                  <td>1.The </td>
+                <td>12cm2</td>
+                <td><button class="bg-blue-500 text-white px-1 py-1 rounded font-semibold ">Convert to m2</button></td>
+                </tr>
+
+          </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+      
+    </footer>
+    
+
+</body>
+</html>

@@ -99,14 +99,14 @@
             <div class="card card-compact w-full bg-base-100 shadow-xl">
                 <figure><img class="w-full h-52" src="img/vue-js.jpg" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Vue JS!</h2>
+                  <h2 id="vue-name" class="card-title">Vue JS!</h2>
                   <p>Lorem ipsum dolor consectetur the adipisicing elit. molestiae architecto .</p>
                   <!-- <p>Price: $ <span>110</span> </p>
                   <p>Quantity: <span>4</span></p> -->
-                  <input type="text" placeholder="Price here" class="input input-bordered input-xs w-2/3 max-w-xs" />
-                  <input type="text" placeholder="Quantity here" class="input input-bordered input-xs w-2/3 max-w-xs" />
+                  <input id="vue-price" type="text" placeholder="Price here" class="input input-bordered input-xs w-2/3 max-w-xs" />
+                  <input id="vue-quantity" type="text" placeholder="Quantity here" class="input input-bordered input-xs w-2/3 max-w-xs" />
                   <div class="card-actions justify-end">
-                    <button class="btn btn-info">Add To Cart</button>
+                    <button id="vue-btn" class="btn btn-info">Add To Cart</button>
                   </div>
                 </div>
               </div>
@@ -128,6 +128,7 @@
                       <th>NO:</th>
                       <th>NAME</th>
                       <th>PRICE</th>
+                      <th>Quantity</th>
                       <th>TOTAL</th>
                     </tr>
                   </thead>
