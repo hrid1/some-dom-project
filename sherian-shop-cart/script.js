@@ -26,7 +26,7 @@ const displyFruits = fruits => {
               <h2 class="card-title">${name}</h2>
               <p>Price: $<span>${price}</span></p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary" onclick="TestClick(${name})">Add To Cart</button>
+                <button class="btn btn-primary" onclick="TestClick('${name}')">Add To Cart</button>
               </div>
             </div>
           </div>
@@ -43,6 +43,11 @@ const displyFruits = fruits => {
 
 function TestClick(id) {
     console.log(id)
+    const cartList = document.getElementById('cart-list');
+    const newItem = document.createElement('li');
+    newItem.innerText =  id;
+    cartList.appendChild(newItem);
+
     
 }
 
