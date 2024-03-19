@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Apple",
+      "price": 1.99,
+      "id": "A001",
+      "image": "https://chaldn.com/_mpimage/shagor-kola-banana-sagor-4-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D76879&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Banana",
+      "price": 0.59,
+      "id": "B002",
+      "image": "https://chaldn.com/_mpimage/watermelon-small-3-kg-tormuj-1-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D133254&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Orange",
+      "price": 0.79,
+      "id": "O003",
+      "image": "https://chaldn.com/_mpimage/shada-nashpati-pear-white-2-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D71168&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Grapes",
+      "price": 2.49,
+      "id": "G004",
+      "image": "https://chaldn.com/_mpimage/dalim-pomegranate-2-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D28589&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Strawberry",
+      "price": 3.29,
+      "id": "S005",
+      "image": "https://chaldn.com/_mpimage/sobuj-angur-green-grapes-12-gm-250-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D134876&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Watermelon",
+      "price": 4.99,
+      "id": "W006",
+      "image": "https://chaldn.com/_mpimage/malta-50-gm-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D131779&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Pineapple",
+      "price": 2.79,
+      "id": "P007",
+      "image": "https://chaldn.com/_mpimage/shada-nashpati-pear-white-2-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D71168&q=best&v=1&m=400&webp=1"
+    },
+    {
+      "name": "Mango",
+      "price": 1.89,
+      "id": "M008",
+      "image": "https://chaldn.com/_mpimage/shagor-kola-banana-sagor-4-pcs?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D76879&q=best&v=1&m=400&webp=1"
+    }
+  ]
